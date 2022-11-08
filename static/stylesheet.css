@@ -2,12 +2,44 @@
     margin: 0;
     padding: 0;
 }
+/* navbar */
 
+.navbar-nav {
+    margin-right: 0 !important;
+    padding-right: 100px;
+}
+
+.navbar {
+    color: white !important;
+}
+
+.nav-item a {
+    color: white;
+}
+
+.nav-item {
+    padding-left: 2px;
+}
+
+.navbar-brand {
+    color: black !important;
+    padding-left: 100px;
+}
+
+#navbarSupportedContent {
+    padding-left: 100px;
+}
 
 .logo {
     height: 50px;
     width: auto;
     margin: 5px;
+}
+
+#banner-container {
+    background-color: white;
+    color:white;
+    padding: 0;
 }
 
 .hero {
