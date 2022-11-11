@@ -111,6 +111,86 @@
             <section id="contact">
                 <div class="container-fluid">
                     <h2>Contact Us</h2>
+                    <p>Fill out the form below to get started!</p>
+                    <!--Contact Form-->
+                    <div class="contact-form">
+                            <div>
+                                <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+                                <input type="hidden" name="access_key" value="d58beed4-29fc-44ab-845e-9a93215afc8b" />
+                                <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                                <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+                                <!--Name-->
+                                <div class="form-section">
+                                    <label for="fname">First Name*</label>
+                                    <input type="text" name="name" id="first_name" placeholder="John" required/>
+
+                                    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                        Please provide your name.
+                                    </div>
+                                </div>
+                                <!--Last Name-->
+                                <div class="form-section">
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" name="last_name" id="lname" placeholder="Doe" required/>
+
+                                    <style>
+                                        .required:after {
+                                          content:" *";
+                                          color: red;
+                                        }
+                                      </style>
+
+                                    <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                        Please provide your last name.
+                                    </div>
+                                </div>
+
+                                <!--Last Name-->
+                                <div class="form-section">
+                                    <label for="bizname">Website URL / Social Media Handle</label>
+                                    <input type="text" name="business_name" id="bizname" placeholder="www.mybiz.com"/>
+                                </div>
+
+                                <!-- Email-->
+                                <div class="form-section">
+                                    <label for="email">Email Address*</label>
+                                    <input type="email" name="email" id="email" placeholder="you@company.com" required/>
+                                    <div class="empty-feedback text-red-400 text-sm mt-1">
+                                        Please provide your email address.
+                                    </div>
+
+                                    <div class="invalid-feedback text-red-400 text-sm mt-1">
+                                        Please provide a valid email address.
+                                    </div>
+                                </div>
+
+                            <div class="form-section">
+                                <!--Phone Number - not required-->
+                                <label for="phone">Phone Number</label>
+                                <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567"/>
+                            </div>
+
+                            <div>
+                                <label for="message">Brief description of what you are looking to have done*</label>
+                            </div>
+
+                                <!--Message-->
+
+                                <textarea rows="5" name="message" id="message" placeholder="Your Message" required></textarea>
+                                <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                                    Please enter your message.
+                                </div>
+                                <!--Submit-->
+                                <div>
+                                    <button type="submit">Send Message</button>
+                                </div>
+
+                                <p class="text-base text-center text-gray-400" id="result"></p>
+
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -127,5 +207,7 @@
         "sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"
         ></script>
+
+        <script src="static/js/validation.js"></script>
     </body>
 </html>

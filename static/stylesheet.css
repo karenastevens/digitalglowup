@@ -52,6 +52,7 @@
 .about_pic {
     width: 50%;
     height: auto;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% !important;
 }
 
 /* media */
@@ -65,4 +66,74 @@
         width: 100%;
         height: auto;
     }
+}
+
+/* Contact Form */
+
+#contact {
+    text-align: center;
+    background-color: lightgray;
+    padding-top: 20px;
+}
+
+.invalid-feedback,
+.empty-feedback {
+  display: none;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: #dc3545;
+}
+
+form input {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: lightgray;
+    padding: 8px;
+    width: 100%;
+}
+
+form textarea {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: lightgray;
+    padding: 8px;
+    width: 100%;
+}
+
+form label {
+    padding-bottom: 3px;
+}
+
+.contact-form {
+    background-color: lightgray;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+form button {
+    background-color: #38b6ff;
+    padding: 10px;
+    border-radius: 15px;
+    border: lightgray;
+}
+
+.required label {
+    font-weight: bold;
+}
+.required label:after {
+    color: #e32;
+    content: ' *';
+    display:inline;
 }
