@@ -78,8 +78,17 @@ h2 {
     display: block;
 }
 
+#about {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    background-color:#ffde59;
+}
+
 .about_pic {
-    width: 50%;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-top: -10px;
+    align-items: center;
     height: auto;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% !important;
 }
@@ -162,4 +171,14 @@ form button {
     color:red;
     font-size: 12px;
     padding-top: 3px;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    background-color: #737373;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
