@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="static/stylesheet.css">
+        <link rel="stylesheet" href="static/stylesheet.css" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap">
         <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
         <!-- Bootstrap CSS -->
        <script src="https://kit.fontawesome.com/a2f275854f.js" crossorigin="anonymous"></script>
@@ -57,30 +57,39 @@
             <section id="services">
                 <div class="container-fluid">
                     <h2>Services</h2>
-                    <div>
+                    <div class="row">
+                    <div class="col-sm">
                         <i class="fa-solid fa-desktop"></i>
                         <h3>Web Design & Development</h3>
                         <p>All websites are uniquely designed in-house to suit all of your needs. We collaborate with you, the client, to bring your vision to life with a user-friendly, reliable website.</p>
                     </div>
-                    <div>
+                    <div class="col-sm">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <h3>SEO</h3>
                         <p>Part of getting a Digital GlowUp is ensuring your customers are able to find you easier online. We incorporate proven SEO techniques through each step of the web development process towards enhancing your online visibility.</p>
                     </div>
-                    <div>
+                    <div class="col-sm">
                         <i class="fa-solid fa-server"></i>
                         <h3>Hosting</h3>
                         <p>Keep everything under one umbrella and let us provide reliable and affordable web hosting. We can also migrate you over from your current provider without a hitch!</p>
                     </div>
-                    <div>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm">
                         <i class="fa-solid fa-palette"></i>
                         <h3>Branding</h3>
                         <p>Just getting started or looking to update? We got it! From logo design to brand colors. We can bring your vision to life.</p>
                     </div>
-                    <div>
+                    <div class="col-sm">
                         <i class="fa-solid fa-database"></i>
-                        <h3>*Maintenance & Training</h3>
-                        <p>Reliable maintenance is provided for ease of mind. This includes automatic updates, frequent backups and more. Interested in editing the website yourself? Training is also provided upon request.</p>
+                        <h3>Maintenance</h3>
+                        <p>Reliable maintenance is provided for ease of mind. This includes automatic updates, frequent backups and more.</p>
+                    </div>
+                    <div class="col-sm">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <h3>Training</h3>
+                        <p>Interested in editing the website yourself? Training is also provided upon request. Have an expert walk you through how to edit the content on your website.</p>
+                    </div>
                     </div>
                 </div>
             </section>
@@ -122,7 +131,7 @@
 
                                 <!--Name-->
                                 <div class="form-section">
-                                    <label for="fname">First Name*</label>
+                                    <label for="fname">First Name<span style="color:red">*</span></label>
                                     <input type="text" name="name" id="first_name" placeholder="John" required/>
 
                                     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
@@ -131,15 +140,8 @@
                                 </div>
                                 <!--Last Name-->
                                 <div class="form-section">
-                                    <label for="lname">Last Name</label>
+                                    <label for="lname">Last Name<span style="color:red">*</span></label>
                                     <input type="text" name="last_name" id="lname" placeholder="Doe" required/>
-
-                                    <style>
-                                        .required:after {
-                                          content:" *";
-                                          color: red;
-                                        }
-                                      </style>
 
                                     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
                                         Please provide your last name.
@@ -154,7 +156,7 @@
 
                                 <!-- Email-->
                                 <div class="form-section">
-                                    <label for="email">Email Address*</label>
+                                    <label for="email">Email Address<span style="color:red">*</span></label>
                                     <input type="email" name="email" id="email" placeholder="you@company.com" required/>
                                     <div class="empty-feedback text-red-400 text-sm mt-1">
                                         Please provide your email address.
@@ -172,7 +174,7 @@
                             </div>
 
                             <div>
-                                <label for="message">Brief description of what you are looking to have done*</label>
+                                <label for="message">Brief description of what you are looking to have done<span style="color:red">*</span></label>
                             </div>
 
                                 <!--Message-->
@@ -185,6 +187,7 @@
                                 <div>
                                     <button type="submit">Send Message</button>
                                 </div>
+                                <p id="required_txt">*required</p>
 
                                 <p class="text-base text-center text-gray-400" id="result"></p>
 

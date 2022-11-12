@@ -2,6 +2,34 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    font-size: 40px !important;
+}
+
+#services {
+    text-align: center;
+    box-shadow: 0 15px 10px -10px #8c8b8b inset;
+}
+
+#services i {
+    color: #ffde59;
+    font-size: 40px;
+    padding-bottom: 8px;
+}
+
+#services p {
+    text-align: left;
+}
+
+
 /* navbar */
 
 .navbar-nav {
@@ -17,6 +45,7 @@
 .nav-item a {
     color: white;
 }
+
 
 .nav-item {
     padding-left: 2px;
@@ -129,11 +158,8 @@ form button {
     border: lightgray;
 }
 
-.required label {
-    font-weight: bold;
-}
-.required label:after {
-    color: #e32;
-    content: ' *';
-    display:inline;
+#required_txt {
+    color:red;
+    font-size: 12px;
+    padding-top: 3px;
 }
