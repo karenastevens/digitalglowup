@@ -15,6 +15,7 @@ h2 {
 }
 
 #services {
+    padding: 20px;
     text-align: center;
     box-shadow: 0 15px 10px -10px #8c8b8b inset;
 }
@@ -27,6 +28,10 @@ h2 {
 
 #services p {
     text-align: left;
+}
+
+#about {
+    padding: 20px;
 }
 
 
@@ -68,6 +73,8 @@ h2 {
     margin: 5px;
 }
 
+/* front page banner */
+
 #banner-container {
     background-color: white;
     color:white;
@@ -76,9 +83,11 @@ h2 {
 
 .hero {
     width: 100%;
-    height: auto;
+    height: 600px;
     display: block;
 }
+
+/* About Section */
 
 #about {
     margin-top: 20px;
@@ -105,6 +114,11 @@ h2 {
     .about_pic {
         width: 100%;
         height: auto;
+    }
+    .hero {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 }
 
